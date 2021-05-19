@@ -1,0 +1,72 @@
+.address{
+    color:blue;
+   }
+.balance{
+       color:rgb(22, 21, 21);
+   }
+.contractaddress{
+       color:green;
+   }
+.cwjbalance{
+    color:rgb(22, 21, 21);
+   }
+.template-balance{
+       background-color:rgb(22, 22, 19);
+       
+   }
+.info{
+    background-color:rgb(44, 44, 56)
+   }
+
+body{
+    background-color:rgb(44, 44, 56);
+}
+
+
+
+h2,h3{
+    color:white
+}
+h1{
+    letter-spacing:7px;
+}
+h2{
+    letter-spacing:3px;
+}
+#splashscreen{
+    background-color:bisque;
+}
+#splashscreen h2{
+    color:rgb(236, 9, 27);
+}
+#advert p{
+    color:rgb(236, 9, 27);
+}
+#network-name{
+    color:red;
+}
+#selected-account{
+    color:red;
+}
+#network p{
+    color:rgb(111, 111, 119)
+}
+.card{
+    margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+#mc-embedded-subscribe-form{
+    background-color:rgb(44, 44, 56);
+}
+.card header{
+    font-size:40px
+}
+#mc_embed_signup{background:#fff; clear:left; font:14px ubuntu; color:red}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+       
+#dashboard{
+    color:bisque;
+    font-size:30px;
+}

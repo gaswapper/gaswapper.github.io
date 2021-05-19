@@ -1,0 +1,201 @@
+<html>
+  
+<!-- Mirrored from token.codewithjoe.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 May 2021 23:14:56 GMT -->
+<head>
+    <title>CodeWithJoe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" />
+    <!-- Get some bootstrap default styles -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="../cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Construct a Bootstrap layout -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="hide">
+          <img src="logo.png" style="width:100px;height:100px;">
+        </div>
+        
+          <div class="alert alert-danger" id="alert-error-https" style="display: none">
+            You can run this example only over HTTPS connection.
+          </div>
+
+          <div id="prepare">
+            <button class="btn btn-success" id="btn-connect">
+              Connect wallet
+            </button>
+          </div>
+    
+          <div id="connected" style="display: none">
+            <button class="btn btn-danger" id="btn-disconnect">
+              Disconnect wallet
+            </button>
+         
+            <hr>
+
+            <div id="network">
+              <p>
+                <strong>Connected Blockchain:</strong> <span id="network-name"></span>
+              </p>
+
+              <p>
+                <strong>Selected Account:</strong> <span id="selected-account"></span>
+              </p>
+
+            </div>
+            <h1 id="dashboard">CodeWithJoe Token Dashboard</h1>
+            <script src="../widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+<coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,singularitynet,chiliz,pancakeswap-token,binancecoin,superfarm" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
+
+            <hr>
+           <div class="dashboard">
+            <div class="card">
+                <div class="card-header">BNB</div>
+                <div class="card-body"><p>MainNetBalance: <span class="balance"></span></p></div>
+                <button class="btn btn-primary" id="buyBNB">Buy BNB</button>
+              </div>
+            <div class="card">
+                <div class="card-header">CWJ</div>
+                <div class="card-body"><p>CWJContract: <span class="cwj"></span></p></div>
+                <div class="card-body"><p>BSCScan: <span class="cwjscan"></span></p></div>
+                <div class="card-footer"><p>CWJBalance: <span class="cwjbalance"></span> CWJ </p><button class="btn btn-primary float-right" id="addToken">AddToken</button></div>
+              </div>
+              
+              <hr>
+           </div>
+           
+            <div class="info">
+                
+                    
+                  <div class="row text-center">
+                    <div class="col-sm-3">
+                        <div class="card">
+                        <div class="card-header">TokenInfo</div>
+                        <div class="card-body">TotalSupply<p class="totalSupply"></p></div>
+                        <div class="card-body">TotalStaked<p class="totalStaked"></p></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3"><div class="card">
+                        <div class="card-header">Stake</div>
+                        <div class="card-body"><p>available: <span class="availableStake"></span></p></div>
+                        <div class="card-body"><input type="text" class="form-control" placeholder="Amount" id="stakeAmount"></div>
+                        <button class="btn btn-primary" id="stakeButton">Stake</button>
+                      </div></div>
+                    <div class="col-sm-3"><div class="card">
+                        <div class="card-header">UnStake</div>
+                        <div class="card-body"><p>staked: <span class="stakedbalance"></span></p></div>
+                        <div class="card-body"><input type="text" class="form-control" placeholder="Amount" id="unstakeAmount"></div>
+                        <button class="btn btn-primary" id="unstakeButton">UnStake</button>
+                      </div></div>
+                    <div class="col-sm-3"><div class="card">
+                        <div class="card-header">Dividends</div>
+                        <div class="card-body">earnings<p class="dividendsOf"></p></div>
+                        <div class="card-body"><p></p></div>
+                        <button class="btn btn-primary" id="collect">Collect</button>
+                      </div></div>
+                  </div>
+                  <hr>
+                  <h3>Transfer CWJ Token</h3>
+                  <input type="text" class="form-control" placeholder="Enter value" id="amount">
+                  <label for="sendto">Transfer to:</label>
+                  <input type="text" class="form-control" placeholder="Enter address" id="to">
+                  <button class="btn btn-primary" id="sendEthButton">Transfer</button>
+                <hr>
+
+                  
+                  
+        </div>
+        <hr>
+    </div>
+    
+<div  id="jumbo">
+  <div class="jumbotron text-center" id="splashscreen" >
+    <h1>CodeWithJoe Token</h1>
+    <h2>1st proof of education token</h2>
+    <div class="g-ytsubscribe" data-channelid="UCdgU4pljNproO0RQVbT5QKg" data-layout="default" data-count="default"></div>
+
+   <a href="https://twitter.com/codewithjoe2?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @codewithjoe2</a>
+  </div>
+  <div class="container text-center" id="advert">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Invest</h3>
+        <p>in your future.</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Research</h3>
+        <p>D.Y.O.R</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Educate</h3>
+        <p>teach others</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>Develop</h3>
+        <p>build your own</p>
+      </div>
+    </div>
+  </div>
+ <!-- Begin Mailchimp Signup Form -->
+
+
+<div id="mc_embed_signup" >
+<form action="https://gmail.us7.list-manage.com/subscribe/post?u=8afbaa9b2bc96395907ef126f&amp;id=bf6784ddc1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8afbaa9b2bc96395907ef126f_bf6784ddc1" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+    <hr>
+  </div>
+  <div id="welcome" class="text-center">
+    <h1></h1>
+  </div> 
+  <div id="goodbye">
+    <h1></h1>
+  </div> 
+      
+</div>
+    
+
+    <!--
+      Use unpkg CDN to load all NPM packages to vanilla Javascript - read more at http://unpkg.com
+      On your deployment, you properly either want to use a preprocessing tool like webpack
+      to include these files, or extract NPM archives and manually host the files inside.
+      TODO: Pin down all versions.
+    -->
+
+    <script type="text/javascript" src="../unpkg.com/web3%401.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="../unpkg.com/web3modal%401.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="../unpkg.com/evm-chains%400.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="../unpkg.com/%40walletconnect/web3-provider%401.2.1/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="../unpkg.com/fortmatic%402.0.6/dist/fortmatic.js"></script>
+
+    <!-- This is our example code -->
+    <script type="text/javascript" src="connect.js"></script>
+    <script src="../apis.google.com/js/platform.js"></script>
+    <script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </body>
+
+<!-- Mirrored from token.codewithjoe.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 May 2021 23:15:02 GMT -->
+</html>

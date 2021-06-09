@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.google.com	TRUE	/	FALSE	1999999999	NID	216=pc0o-Rw_eoC5ME6UTMLnA98l2XxC2iDFKE60I4P04zZqrHObfvjt-ltnfTP7D6SKhNHBgCxAxddVh7GQU0uXFx4647v13Jp6Kvg3AFVWIeLlZeEyYL8X1GvBbrjvsmBAkfb9ixnXoZdt3NGDij1b7sjHZ_U9xf7ygLNQOGhblVU
-

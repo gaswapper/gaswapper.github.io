@@ -56,13 +56,14 @@ function init() {
   // Built-in web browser provider (only one can exist as a time)
   // like MetaMask, Brave or Opera is added automatically by Web3modal
   const providerOptions = {
-  //  walletconnect: {
-  //    package: WalletConnectProvider,
-  //    options: {
+    walletconnect: {
+      package: WalletConnectProvider,
+      options: {
         // Mikko's test key - don't copy as your mileage may vary
   //      infuraId: "8043bb2cf99347b1bfadfb233c5325c0",
- //     }
- //   },
+          infuraId: "aae62cff1634441194763eac71da82f0",
+      }
+    },
 
  //   fortmatic: {
  //     package: Fortmatic,

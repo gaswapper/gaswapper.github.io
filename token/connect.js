@@ -7,8 +7,8 @@ document.querySelector('#goodbye').style.display='none';
  // Unpkg imports
 const Web3Modal = window.Web3Modal.default;
 const WalletConnectProvider = window.WalletConnectProvider.default;
-const Fortmatic = window.Fortmatic;
-const evmChains = window.evmChains;
+//const Fortmatic = window.Fortmatic;
+//const evmChains = window.evmChains;
 
 // Web3modal instance
 let web3Modal
@@ -22,7 +22,7 @@ let selectedAccount;
 
 
 // Get contract and ABI and address
-//let contractaddress = '0x40a3d513f580a3259cec01c059b521a5dda2aa3a';
+//let contractaddress3 = '0x40a3d513f580a3259cec01c059b521a5dda2aa3a';
 
 let contractaddress = '0x49AD5Ae0b902360029b222CB6516521afA8e1141';
 let contractaddress2 = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
@@ -119,6 +119,7 @@ async function fetchAccountData() {
     //GET Ethereum/BNB  Balance
     const balance = await web3.eth.getBalance(address);
     //HKD TOKEN 
+    //const contract3 = new web3.eth.Contract(abi,contractaddress3);
     const contract = new web3.eth.Contract(abi,contractaddress);
     //Cake Token
     //const contract2 = new web3.eth.Contract(abi,contractaddress2);
